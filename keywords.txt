@@ -1,0 +1,29 @@
+###########################################
+# Syntax Coloring Map For VoCaUI
+###########################################
+
+###########################################
+# Datatypes (KEYWORD1)
+###########################################
+
+vocaui	KEYWORD1
+
+###########################################
+# Methods and Functions (KEYWORD2)
+###########################################
+initVoCa	KEYWORD2
+voCaHandle	KEYWORD2
+loadConfigFile	KEYWORD2
+render_init	KEYWORD2
+begin_menu	KEYWORD2
+render_inputText	KEYWORD2
+render_range	KEYWORD2
+render_switch	KEYWORD2
+render_state	KEYWORD2
+render_TimePicker	KEYWORD2
+render_textView	KEYWORD2
+render_button	KEYWORD2
+end_menu	KEYWORD2
+addTaskEvent	KEYWORD2
+getValue	KEYWORD2
+setValue	KEYWORD2
