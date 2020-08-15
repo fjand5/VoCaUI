@@ -11,10 +11,10 @@ void setup() {
   loadConfigFile(false); // for using
 
   //==== che 4 dòng này nếu thiết lập mềm qua 192.168.4.1
-  setValue("staid","Vong Cat-Hide"); // tên wifi
-  setValue("stapass","78787878"); // mật khẩu wifi
-  setValue("user","cafevongcat");
-  setValue("pass","12345679");
+  setValue("staid","********"); // tên wifi
+  setValue("stapass","********"); // mật khẩu wifi
+  setValue("user","********");
+  setValue("pass","********");
   //================================================
   render_init("Bật Tắt Led"); // Khởi tạo trang web
 
