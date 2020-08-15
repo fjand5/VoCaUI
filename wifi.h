@@ -208,3 +208,5 @@ void wifiHandle() {
       epochTimeTmp = millis();
     }
   }
+}
+#endif
