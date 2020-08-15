@@ -207,6 +207,8 @@ void wifiHandle() {
 
       epochTimeTmp = millis();
     }
+  }else if(!gotTime){
+    delay(500);
   }
 }
 #endif
