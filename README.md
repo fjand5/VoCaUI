@@ -5,6 +5,11 @@ VoCaUI được tích hợp trên **[Ngôi Nhà IoT](https://ngoinhaiot.com)**.\
 Giao diện được cập nhật theo code trên arduino.\
 Bạn chỉ lập trình giao diện trên arduino.\
 Giám sát toàn bộ thiết bị trên **[Ngôi Nhà IoT](https://ngoinhaiot.com)**.
+## Hướng dẫn config cho hệ thống.
+1. Khi hệ thống bắt đầu khởi động, đèn trên board sẽ nháy nhanh trong 40s (bạn có 40s để làm bước 3).\
+2. Bạn kết nối vào wifi do hệ thống phát ra ("VoCaUI-xxx") với mật khẩu là 12345678.\
+3. Vào địa chỉ 192.168.4.1 bằng trình duyệt (nhớ tắt hết 3G, 4G nếu sử dụng điện thoại), khi đã vào được trang web thì không còn giới hạn 40s nữa, bạn có thể từ từ thao tác cũng được.\
+4. Vào menu/setting để thiết lập các thông số: tên wifi, passwifi; tên tài khoản và mật khẩu VoCa (trùng với tài khoản và mật khẩu trên **[Ngôi Nhà IoT](https://ngoinhaiot.com)**).
 
 ## Chức năng các hàm trong hệ thống.
 ### * loadConfigFile(del)
