@@ -24,12 +24,12 @@ void publicMqtt(String data, String topic, bool retain = false) {
 //  mqttClient.publish(topic.c_str(), data.c_str(),retain);
 //
 //}
-void initMqttConnection() {
+void initMqttConnection(bool force = false) {
   static bool isInit = false;
-  if (isInit)
+  if (isInit && !force)
     return;
   isInit = true;
-
+    
     vocaClient.stop();
     if (vocaClient.connect("www.ngoinhaiot.com", 80)) {
 
@@ -89,11 +89,15 @@ void initMqttConnection() {
 }
 
 void mqttHandle() {
-  if (!mqttClient.connected()) {
-    initMqttConnection();
-    return;
+  if(!mqttClient.connected()){
+        
+    delay(1000);
+     initMqttConnection(true);
+     delay(1000);
+     return;
+
   }
-  if (!isPubDasboard) {
+  if (!isPubDasboard && mqttClient.state()==0) {
     publicMqtt(String(getPage()), String(getValue("mqttUser")) + "/" + NAME_DEVICE + "_" + getValue("deviceId") + "/dashboard", true);
     isPubDasboard = true;
   }
